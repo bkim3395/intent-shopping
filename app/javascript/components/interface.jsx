@@ -68,9 +68,11 @@ export default class Interface extends React.Component {
         let routerButton;
         let items = []
         if (this.props.formType === SHOP) {
-            routerButton = <button className="button" type="button">
-                            <Link to="/cart">View Cart</Link>
-                           </button>;
+            routerButton = <Link to="/cart">
+                            <button className="button" type="button">
+                                View Cart
+                            </button>
+                            </Link>;
             for (let code in this.props.items) {
                 items.push(this.props.items[code]);
             }
@@ -88,9 +90,11 @@ export default class Interface extends React.Component {
                 );
             })
         } else {
-            routerButton = <button className="button" type="button">
-                            <Link to="/">See Items</Link>
-                           </button>
+            routerButton =  <Link to="/">
+                            <button className="button" type="button">
+                                See Items
+                            </button>
+                            </Link>
             items = this.props.cart.items.map((item, idx) => {
                 return(
                     <div className="item-border">

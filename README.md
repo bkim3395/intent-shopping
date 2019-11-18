@@ -1,24 +1,23 @@
-# README
+# Intent Assignment: Shopping Cart
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Installation
 
-Things you may want to cover:
+Please follow these steps accordingly for correct installation:
 
-* Ruby version
+* Clone this repo into your local machine
 
-* System dependencies
+* Run `bundle install` and `yarn install`
 
-* Configuration
+* You are done! Simple as that.
 
-* Database creation
+## Testing
 
-* Database initialization
+To test API built on Ruby on Rails, please run `bundle exec rspec spec`.
 
-* How to run the test suite
+## Running the Server
 
-* Services (job queues, cache servers, search engines, etc.)
+Please run `bundle exec rails s` to boot up Puma server and see app built on Ruby on Rails and React in your browser. The app should be hosted in `http://localhost:3000`.
 
-* Deployment instructions
+## Extra Features (other than main features from the assignment)
 
-* ...
+The cart will persist even if the user refreshes the browser. The cart will only be destroyed when user closes the browser.

@@ -29,7 +29,6 @@ export const fetchCost = () => (
 );
 
 export const updateCart = (items) => {
-    console.log('api', items)
     return $.ajax({
         url: '/api/cart',
         method: 'PUT',
