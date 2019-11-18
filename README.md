@@ -8,6 +8,8 @@ Please follow these steps accordingly for correct installation:
 
 * Run `bundle install` and `yarn install`
 
+* Create and seed the database through `bundle exec rails db:setup`
+
 * You are done! Simple as that.
 
 ## Testing
