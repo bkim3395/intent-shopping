@@ -1,0 +1,122 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ html, body {
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
+    width: 100vw;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: #d3d3d3;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 70vw;
+    height: 100vh;
+    background-color: white;
+}
+
+#button-header {
+    display: flex;
+    justify-content: space-around;
+    width: 70vw;
+}
+
+.button {
+    background:  #33cccc;
+	color: black;
+	border: 1px solid black;
+	padding: 5px 4vw;
+	font: inherit;
+    outline: inherit;
+    border-radius: 25px;
+    font-size: 2em;
+}
+
+.button:hover {
+    cursor:pointer;
+}
+
+a { 
+    text-decoration: none; color:black; 
+}
+
+#item-list {
+    border: 1px solid black;
+    max-height: 63vh;
+    min-height: 63vh;
+    width: 60vw;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+#item-list:hover, #item-list:hover, #item-list:hover {
+    overflow-y: auto;
+}
+
+#cost {
+    display: flex;
+    justify-content: center;
+    width: 70vw;
+}
+
+#cost h2 {
+    font-size: 2em;
+}
+
+.item {
+    display: flex;
+    padding: 10px 30px;
+    justify-content: space-between;
+    width: 60vw; 
+    box-sizing: border-box;
+}
+
+.item-border {
+    border-width: 0 0 1px 0;
+    border-color: black;
+    border-style: solid;
+}
+
+.item-border:last-child{
+    border-width: 0 0 1px 0;
+    border-color: transparent;
+}
+
+.special-button {
+    background:  #33cccc;
+	color: black;
+	border: 1px solid black;
+	padding: 10px;
+	font: inherit;
+    outline: inherit;
+    border-radius: 50%;
+    font-size: 3em;
+    width: 1.6em;
+    height: 1.6em;
+}
+
+.special-button:hover {
+    cursor:pointer;
+}
