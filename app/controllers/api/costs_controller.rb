@@ -6,7 +6,7 @@ class Api::CostsController < ApplicationController
             render json: ["Cart does not exist so total cost can't be calculated."], status: 400
         else
             items = Hash.new(0)
-            @cost = 0
+            @cost = 0.0
             cart.items.each do |item|
                 items[item.code] += 1
             end
@@ -19,6 +19,7 @@ class Api::CostsController < ApplicationController
                     @cost += count * item.unit_price
                 end
             end
+            @cost = @cost.round(2)
             render 'api/costs/show.json.jbuilder'
         end
     end
